@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Бункер</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/regulations.css">
+	<link rel="stylesheet" href="css/number_players.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<div class="main">
+			<ul class="menu">
+				<a href="game.html"><li class='start_game'>Начать игру </li></a>
+				<a class="button_number_players" href="#"><li>Количество игроков</li></a>
+				<a class="button_regulations" href="#"><li>Правила</li></a>
+				<a class="button_creator" href	="#"><li>Создатели</li></a>
+
+			</ul>
+			</div>
+			<div id="myDIV" class="creator">
+				<div class="creator-menu">
+				<h1>Создатель:</h1>
+				<p>Анущенко Владислав Андреевич</p>
+				<p>Кто хочет поблагодарить создателя донатом:</p>
+				<p>qiwi: +375292173849</p>
+				</div>
+			<a class="close" href="#"><img  src="img/delete1.png"> </a>	
+		</div>
+		<div class="regulations">
+				<div class="regulations-menu">
+				<h1>Правила</h1>
+				
+				</div>
+			<a class="regulations_close" href="#"><img  src="img/delete1.png"> </a>	
+		</div>
+		<div class="number_players">
+				<div class="number_players-menu">
+				<h1>Количество игроков</h1>
+					<p>В игру могут играть от 8 до 12 человек<br>
+					Выберите нужное вам число игроков:</p>
+				<input id="elem1" type="number" id="tentacles" name="tentacles"
+       min="8" value="10" max="12">
+					<button id="butt">Выбрать</button>
+					<div id="str"></div>
+				</div>
+			<a class="number_players_close" href="#"><img  src="img/delete1.png"> </a>	
+		</div>
+		
+		
+		<script src="js/creater.js"></script>
+	</body>
+</html>

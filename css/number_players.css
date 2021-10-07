@@ -1,0 +1,30 @@
+.number_players{
+	display: none;
+}
+.number_players-menu{
+	
+	min-height: 250px;
+	width: 30%;
+	border: 3px solid black;
+	margin: auto;
+	  background: linear-gradient(to bottom, #ffff00 4%, #00ff99 80%);
+	text-align: center;
+	 position: absolute;
+  top: 150;
+	right: 35%;
+  margin: auto;
+}
+.number_players img{
+	position: absolute;
+	 top: 135;
+	left: 63.9%;
+	z-index: 1;
+}
+
+.activ{
+display: block;
+}
+.number_players-menu input{
+	width: 40px;
+}
+
