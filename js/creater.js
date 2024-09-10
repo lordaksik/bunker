@@ -5,14 +5,11 @@ let regulations_close = document.querySelector('.regulations');
 let number_players_close = document.querySelector('.number_players');
 var close = document.getElementById("myDIV");
 var close2 = document.getElementById("butt");
-console.log(close2)
 $('.button_creator').click(function () {
-    console.log('Кнопка нажата!');
     creator.classList.add('activ');
 });
 
 $('.close').click(function () {
-    console.log('Кнопка нажата!');
     close.classList.remove("activ");
 });
 
@@ -27,7 +24,6 @@ $('.button_number_players').click(function () {
     number_players.classList.add("activ");
 });
 $('.number_players_close').click(function () {
-
     number_players_close.classList.remove("activ");
     localStorage.setItem('player_kol', document.getElementById('tentacles').value)
 });

@@ -11,10 +11,10 @@ $.getJSON("game_variables.json", function (jsons) {
     function createDiv() {
         var div = document.createElement('div');
         div.className = 'player';
-        div.innerHTML = "<h1 class=" + "menu" + i + "><a href=" + '#' + " >Игрок " + (i + 1) + "</a></h1><div class=" + "player_specifications" + ">" +
+        div.innerHTML = "<h1 class=" + "menu" + i + "><a href=" + '#' + " >Игрок " + (i + 1) + "</a></h1><div class=>" +
             "<ol class=" + 'specifications' +
-            "></ol></div><div class=" + "cartGame" + "><h3 class=" + "AllCart" + i + ">Карты действия:</h3><p class=" + "cartGamers" + i +
-            ">1:</p><div  class=" + "cart" + i + ">" + cart_first + "<p><button class=" + "cartUseFirst" + i + ">Использовать</button></p></div><p class=" + "cartGamers2" + i + ">2:</p><div class=" + "cart2" + i + ">" + cart_two + "<p><button class=" + "cartUseTwo" + i + ">Использовать</button></p></div></div>";
+            "></ol></div><div class=" + "cartGame" + "><h3 class=" + "AllCart" + i + ">Карты действия:</h3><div class=" + "actionCards" + "><p class=" + "cartGamers" + i +
+            ">1: <span  class=" + "cart" + i + ">" + cart_first + "</span></p><p><button class=" + "cartUseFirst" + i + ">Использовать</button></p><p class=" + "cartGamers2" + i + ">2:<span class=" + "cart2" + i + ">" + cart_two + "</span></p></span><p><button class=" + "cartUseTwo" + i + ">Использовать</button></p></div></div>";
         return div;
     }
 
@@ -140,7 +140,8 @@ $.getJSON("game_variables.json", function (jsons) {
         for (let k = 0; k < 8; k++) {
             let li_menu = document.querySelector('.dab' + i + k);
             $(li_menu).css('min-height', '20px');
-            $(li_menu).css('width', '240px');
+            $(li_menu).css('min-width', '240px');
+            $(li_menu).css('padding-right', '5px');
         }
     }
     for (let i = 0; i < res; i++) {

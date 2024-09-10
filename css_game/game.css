@@ -15,7 +15,9 @@ a {
 .specifications {
 	margin-bottom: 0;
 }
-
+.actionCards{
+margin-left: 18px;
+}
 .cartGame p {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -23,7 +25,7 @@ a {
 
 .player {
 	min-width: 20%;
-	max-width: 20%;
+	max-width: 30%;
 	border: solid 2px black;
 	margin: 2% 2% 2% 2%;
 	background: white;
