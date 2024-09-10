@@ -31,7 +31,9 @@ margin-left: 18px;
 	background: white;
 	padding-bottom: 10px;
 }
-
+.use{
+	text-align: center;
+}
 .player h1 {
 	border-bottom: solid black 1px;
 	margin-top: 0;

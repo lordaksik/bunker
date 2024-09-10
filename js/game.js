@@ -14,7 +14,7 @@ $.getJSON("game_variables.json", function (jsons) {
         div.innerHTML = "<h1 class=" + "menu" + i + "><a href=" + '#' + " >Игрок " + (i + 1) + "</a></h1><div class=>" +
             "<ol class=" + 'specifications' +
             "></ol></div><div class=" + "cartGame" + "><h3 class=" + "AllCart" + i + ">Карты действия:</h3><div class=" + "actionCards" + "><p class=" + "cartGamers" + i +
-            ">1: <span  class=" + "cart" + i + ">" + cart_first + "</span></p><p><button class=" + "cartUseFirst" + i + ">Использовать</button></p><p class=" + "cartGamers2" + i + ">2:<span class=" + "cart2" + i + ">" + cart_two + "</span></p></span><p><button class=" + "cartUseTwo" + i + ">Использовать</button></p></div></div>";
+            ">1: <span  class=" + "cart" + i + ">" + cart_first + "</span></p><p class=" + "use" + "><button class=" + "cartUseFirst" + i + ">Использовать</button></p><p class=" + "cartGamers2" + i + ">2:<span class=" + "cart2" + i + ">" + cart_two + "</span></p></span><p  class=" + "use" + "><button class=" + "cartUseTwo" + i + ">Использовать</button></p></div></div>";
         return div;
     }
 
