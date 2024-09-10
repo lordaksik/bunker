@@ -1,26 +1,27 @@
-.regulations{
+.regulations {
 	display: none;
 }
-.regulations-menu{
-	
+
+.regulations-menu {
+
 	min-height: 250px;
 	width: 60%;
 	border: 3px solid black;
 	margin: auto;
-	 background: linear-gradient(0deg, rgba(189,171,90,1) 0%, rgba(253,250,45,1) 100%);
+	background: linear-gradient(0deg, rgba(189, 171, 90, 1) 0%, rgba(253, 250, 45, 1) 100%);
 	text-align: center;
-	 position: absolute;
-  top: 150;
-	right: 20%;
-  margin: auto;
-}
-.regulations img{
 	position: absolute;
-	 top: 135;
+	top: 150px;
+	right: 20%;
+}
+
+.regulations img {
+	position: absolute;
+	top: 135px;
 	right: 19%;
 	z-index: 1;
 }
 
-.activ{
-display: block;
+.activ {
+	display: block;
 }

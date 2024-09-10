@@ -11,11 +11,13 @@ $.getJSON("game_variables.json", function (jsons) {
     function createDiv() {
         var div = document.createElement('div');
         div.className = 'player';
-        div.innerHTML = "<h1 class=" + "menu" + i + "><a href=" + '#' + " >Игрок " + (i + 1) + "</a></h1><div class=" + "player_specifications" + "><ol class=" + 'specifications' +
-            "></ol></div><div class=" + "cartGame" + "><p class=" + "AllCart" + i + ">Карты действия</p><p class=" + "cartGamers" + i +
-            ">1:</p><div  class=" + "cart" + i + ">" + cart_first + "</div><p class=" + "cartGamers2" + i + ">2:</p><div class=" + "cart2" + i + ">" + cart_two + "</div></div>";
+        div.innerHTML = "<h1 class=" + "menu" + i + "><a href=" + '#' + " >Игрок " + (i + 1) + "</a></h1><div class=" + "player_specifications" + ">" +
+            "<ol class=" + 'specifications' +
+            "></ol></div><div class=" + "cartGame" + "><h3 class=" + "AllCart" + i + ">Карты действия:</h3><p class=" + "cartGamers" + i +
+            ">1:</p><div  class=" + "cart" + i + ">" + cart_first + "<p><button class=" + "cartUseFirst" + i + ">Использовать</button></p></div><p class=" + "cartGamers2" + i + ">2:</p><div class=" + "cart2" + i + ">" + cart_two + "<p><button class=" + "cartUseTwo" + i + ">Использовать</button></p></div></div>";
         return div;
     }
+
     function createSpecifications() {
         let fragment = new DocumentFragment();
 
@@ -107,7 +109,6 @@ $.getJSON("game_variables.json", function (jsons) {
 
     for (let i = 0; i < res; i++) {
         let menu_border = document.querySelector('.dab' + i + 0);
-        $(menu_border).css('border-top', '1px solid black');
 
     }
 
@@ -174,4 +175,6 @@ $.getJSON("game_variables.json", function (jsons) {
             }
         });
     }
+
+
 });

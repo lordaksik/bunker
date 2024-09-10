@@ -1,47 +1,61 @@
-body{
+body {
 	background: url(/img/bunker.jpg);
 }
-.game{
+
+.game {
 	display: flex;
-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-a{
+
+a {
 	text-decoration: none;
 	color: black;
 }
-.specifications{
-	margin-bottom:0;
+
+.specifications {
+	margin-bottom: 0;
 }
-.cartGame p{
+
+.cartGame p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.player{
-	min-width:20%;
+
+.player {
+	min-width: 20%;
 	max-width: 20%;
-	height: 400px;
 	border: solid 2px black;
 	margin: 2% 2% 2% 2%;
-	background: linear-gradient(to bottom, #ffff00 4%, #00ff99 80%);
+	background: white;
+	padding-bottom: 10px;
+}
+
+.player h1 {
+	border-bottom: solid black 1px;
+	margin-top: 0;
 	text-align: center;
 }
-.player h1{
-	border-bottom: solid black 1px;
-	margin-top: 0px;
+
+.player h3 {
+	text-align: center;
 }
-.specifications{
+
+.specifications {
 	font-size: 18px;
 
 }
-.specifications  li{
+
+.specifications li {
 
 	margin-left: 0;
-	
+
 }
-.dab01{
+
+.dab01 {
 	display: none;
 }
-.game_info{
+
+.game_info {
 	display: flex;
 	flex-direction: column;
 	border: 3px solid black;
@@ -51,54 +65,65 @@ a{
 	margin: 0% 25% 1% 25%;
 	background-color: rgba(212, 210, 54, 0.993);
 }
-.info_cata{
+
+.info_cata {
 	text-align: center;
 	border-bottom: 2px solid black;
 	height: 50px;
 	margin-top: 0px;
 }
-.info_cata h1{
+
+.info_cata h1 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.text_info{
-height:400px;
+
+.text_info {
+	height: 400px;
 }
-.start_game{
+
+.start_game {
 	margin: 25px 30% 5px 30%;
 }
-.button_start{
+
+.button_start {
 	width: 100%;
 	height: 40px;
 	background-color: PaleGreen;
 }
-.button_info{
+
+.button_info {
 	margin: 25px 30% 10px 30%;
 }
-.buttons_start{
+
+.buttons_start {
 	width: 100%;
 	height: 40px;
 	background-color: PaleGreen;
 }
-.activ{
-	display: none;
-	}
-	
-	.act{
-		display: none;
-		}
 
-.activs{
-		display: block;
+.activ {
+	display: none;
 }
-.name_catastrophe{
+
+.act {
+	display: none;
+}
+
+.activs {
+	display: block;
+}
+
+.name_catastrophe {
 	text-align: center;
 	margin-top: 5px;
 }
-.main_info{
+
+.main_info {
 	padding-left: 10px;
 }
-.name_bunker{
+
+.name_bunker {
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 0;
 }

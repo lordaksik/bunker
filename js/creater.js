@@ -4,7 +4,6 @@ let number_players = document.querySelector('.number_players');
 let regulations_close = document.querySelector('.regulations');
 let number_players_close = document.querySelector('.number_players');
 var close = document.getElementById("myDIV");
-var val;
 $('.button_creator').click(function () {
     console.log('Кнопка нажата!');
     creator.classList.add('activ');
