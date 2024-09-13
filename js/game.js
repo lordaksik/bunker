@@ -1,5 +1,5 @@
 var i, c;
-let cart = ["Бункер находится на горе", "Рядом есть бункер с 2 мужчинами химиками", 'Gh', 'G'];
+let cart = ["Бункер находится на горе", "Рядом есть бункер с 2 мужчинами химиками", 'Меняете пол выбранному игроку', 'G'];
 let cart2 = ["Бункер находится на горе1", "Рядом есть бункер с 2 мужчинами химиками2"];
 var res = localStorage.getItem('player_kol');
 let proff, poll, healths, dopNavv, humanQualitiess, hobbyy, phobiass, luggages;
@@ -25,7 +25,7 @@ $.getJSON("game_variables.json", function (jsons) {
             let li = document.createElement('li');
 
             if (k === 0) {
-                li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Пол: </b>' + poll + '</div></div>';
+                li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Пол: </b><span>' + poll + '</span></div></div>';
             }
             if (k === 1) {
                 li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Профессия: </b>' + proff + '</div></div>';
@@ -163,19 +163,31 @@ $.getJSON("game_variables.json", function (jsons) {
     }
     for (let i = 0; i < res; i++) {
         let AllCart = document.querySelector('.cart' + i);
+        let cartUseFirst = document.querySelector('.cartUseFirst' + i);
+        let cartUseTwo = document.querySelector('.cartUseTwo' + i);
         let AllCart2 = document.querySelector('.cart2' + i);
         $('.AllCart' + i).click(function () {
             AllCart.classList.toggle('act');
             AllCart2.classList.toggle('act');
         });
-        $('.cart' + i).click(function () {
-            if (cart_first === 'Gh') {
-                document.querySelector('.activ' + i + 0).innerHTML = 'khj';
-            } else if (cart_first === 'G') {
-                document.querySelector('.activ' + i + 0).innerHTML = 'j';
-            }
+        $(cartUseFirst).click(function () {
+
+            $(AllCart).css('text-decoration', 'line-through');
+            cartUseFirst.setAttribute('disabled', '')
+        });
+        $(cartUseTwo).click(function () {
+            $(AllCart2).css('text-decoration', 'line-through');
+            cartUseTwo.setAttribute('disabled', '')
         });
     }
-
-
+    $('.cart' + i).click(function () {
+        if (cart_first === 'Gh') {
+            document.querySelector('.activ' + i + 0).innerHTML = 'khj';
+        } else if (cart_first === 'G') {
+            document.querySelector('.activ' + i + 0).innerHTML = 'j';
+        }
+    });
+   var player= 3;
+   let newPol= document.querySelector('.dab'+player+'0').children[0].children[1];
+   console.log(newPol)
 });
