@@ -1,5 +1,8 @@
-var i, c;
-let cart = ["Бункер находится на горе", "Рядом есть бункер с 2 мужчинами химиками", 'Меняете пол выбранному игроку', 'G'];
+let cart = [
+    "Бункер находится на горе", "Рядом есть бункер с 2 мужчинами химиками",
+    {name:'genderOne',
+        info:'Меняете пол выбранному игроку'}
+];
 let cart2 = ["Бункер находится на горе1", "Рядом есть бункер с 2 мужчинами химиками2"];
 var res = localStorage.getItem('player_kol');
 let proff, poll, healths, dopNavv, humanQualitiess, hobbyy, phobiass, luggages;
@@ -49,7 +52,6 @@ $.getJSON("game_variables.json", function (jsons) {
             if (k === 7) {
                 li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Багаж: </b>' + luggages + '</div></div>';
             }
-
             fragment.append(li);
 
         }
@@ -62,8 +64,15 @@ $.getJSON("game_variables.json", function (jsons) {
         poll = jsons.pol[randPol];
         jsons.pol.splice(randPol, 1);
         randCart = Math.floor(Math.random() * cart.length);
-
-        cart_first = cart[randCart];
+        if(typeof cart[randCart] === 'object'){
+        if (cart[randCart].name === 'genderOne'){
+            //cart_first=cart[randCart].info;
+            cart_first='<span>'+cart[randCart].info+' </span><input type="text" id="uname" size="1">';
+        }
+        }
+        else {
+            cart_first = cart[randCart];
+        }
         cart.splice(randCart, 1);
 
 
