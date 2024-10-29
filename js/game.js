@@ -1,7 +1,9 @@
 let cart = [
     "Бункер находится на горе", "Рядом есть бункер с 2 мужчинами химиками",
-    {name:'genderOne',
-        info:'Меняете пол выбранному игроку'}
+    {
+        name: 'genderOne',
+        info: 'Меняете пол выбранному игроку'
+    }
 ];
 let cart2 = ["Бункер находится на горе1", "Рядом есть бункер с 2 мужчинами химиками2"];
 var res = localStorage.getItem('player_kol');
@@ -32,7 +34,6 @@ $.getJSON("game_variables.json", function (jsons) {
             }
             if (k === 1) {
                 li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Профессия: </b>' + proff + '</div></div>';
-
             }
             if (k === 2) {
                 li.innerHTML = '<div class=' + 'dab' + i + k + '><div class=' + "activ" + i + k + '> <b>Здоровье: </b>' + healths + '</div></div>';
@@ -64,13 +65,12 @@ $.getJSON("game_variables.json", function (jsons) {
         poll = jsons.pol[randPol];
         jsons.pol.splice(randPol, 1);
         randCart = Math.floor(Math.random() * cart.length);
-        if(typeof cart[randCart] === 'object'){
-        if (cart[randCart].name === 'genderOne'){
-            //cart_first=cart[randCart].info;
-            cart_first='<span>'+cart[randCart].info+' </span><input type="text" id="uname" size="1">';
-        }
-        }
-        else {
+        if (typeof cart[randCart] === 'object') {
+            if (cart[randCart].name === 'genderOne') {
+                //cart_first=cart[randCart].info;
+                cart_first = '<span>' + cart[randCart].info + ' </span><input type="text" id="uname" size="1">';
+            }
+        } else {
             cart_first = cart[randCart];
         }
         cart.splice(randCart, 1);
@@ -196,7 +196,7 @@ $.getJSON("game_variables.json", function (jsons) {
             document.querySelector('.activ' + i + 0).innerHTML = 'j';
         }
     });
-   var player= 3;
-   let newPol= document.querySelector('.dab'+player+'0').children[0].children[1];
-   console.log(newPol)
+    var player = 3;
+    let newPol = document.querySelector('.dab' + player + '0').children[0].children[1];
+    console.log(newPol)
 });
