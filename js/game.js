@@ -68,7 +68,7 @@ $.getJSON("game_variables.json", function (jsons) {
         if (typeof cart[randCart] === 'object') {
             if (cart[randCart].name === 'genderOne') {
                 //cart_first=cart[randCart].info;
-                cart_first = '<span>' + cart[randCart].info + ' </span><input type="text" id="uname" size="1">';
+                cart_first = '<span>' + cart[randCart].info + ' </span><input type="text" id="+cart[randCart].name+" size="1">';
             }
         } else {
             cart_first = cart[randCart];
@@ -163,10 +163,10 @@ $.getJSON("game_variables.json", function (jsons) {
         let cartVision1 = document.querySelector('.cart' + i);
         let cartVision2 = document.querySelector('.cart2' + i);
         $('.cartGamers' + i).click(function () {
-            cartVision1.classList.toggle('act');
+            cartVision1.classList.remove('act');
         });
         $('.cartGamers2' + i).click(function () {
-            cartVision2.classList.toggle('act');
+            cartVision2.classList.remove('act');
         });
 
     }
