@@ -68,7 +68,7 @@ $.getJSON("game_variables.json", function (jsons) {
         if (typeof cart[randCart] === 'object') {
             if (cart[randCart].name === 'genderOne') {
                 //cart_first=cart[randCart].info;
-                cart_first = '<span>' + cart[randCart].info + ' </span><input type="text" id="+cart[randCart].name+" size="1">';
+                cart_first = '<span>' + cart[randCart].info + ' </span><input type="text" id=' + cart[randCart].name + ' size="1">';
             }
         } else {
             cart_first = cart[randCart];
@@ -175,14 +175,20 @@ $.getJSON("game_variables.json", function (jsons) {
         let cartUseFirst = document.querySelector('.cartUseFirst' + i);
         let cartUseTwo = document.querySelector('.cartUseTwo' + i);
         let AllCart2 = document.querySelector('.cart2' + i);
+
+
         $('.AllCart' + i).click(function () {
             AllCart.classList.toggle('act');
             AllCart2.classList.toggle('act');
         });
         $(cartUseFirst).click(function () {
-
+            if (AllCart.childNodes.length === 2) {
+                var test = AllCart.childNodes[1]
+                console.log(test.id === 'genderOne')
+            }
             $(AllCart).css('text-decoration', 'line-through');
             cartUseFirst.setAttribute('disabled', '')
+
         });
         $(cartUseTwo).click(function () {
             $(AllCart2).css('text-decoration', 'line-through');
@@ -198,5 +204,5 @@ $.getJSON("game_variables.json", function (jsons) {
     });
     var player = 3;
     let newPol = document.querySelector('.dab' + player + '0').children[0].children[1];
-    console.log(newPol)
+
 });
