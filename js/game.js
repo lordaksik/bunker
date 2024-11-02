@@ -184,7 +184,7 @@ $.getJSON("game_variables.json", function (jsons) {
         $(cartUseFirst).click(function () {
             if (AllCart.childNodes.length === 2) {
                 var test = AllCart.childNodes[1]
-                console.log(test.id === 'genderOne')
+               // console.log(test.id === 'genderOne')
             }
             $(AllCart).css('text-decoration', 'line-through');
             cartUseFirst.setAttribute('disabled', '')
@@ -204,5 +204,5 @@ $.getJSON("game_variables.json", function (jsons) {
     });
     var player = 3;
     let newPol = document.querySelector('.dab' + player + '0').children[0].children[1];
-
+    
 });
