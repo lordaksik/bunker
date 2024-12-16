@@ -4,7 +4,6 @@ let number_players = document.querySelector('.number_players');
 let regulations_close = document.querySelector('.regulations');
 let number_players_close = document.querySelector('.number_players');
 var close = document.getElementById("myDIV");
-var close2 = document.getElementById("butt");
 $('.button_creator').click(function () {
     creator.classList.add('activ');
 });
@@ -12,7 +11,6 @@ $('.button_creator').click(function () {
 $('.close').click(function () {
     close.classList.remove("activ");
 });
-
 
 $('.button_regulations').click(function () {
     regulations.classList.add("activ");

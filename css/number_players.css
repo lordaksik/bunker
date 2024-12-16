@@ -1,32 +1,32 @@
 .number_players {
-	display: none;
+    display: none;
 }
 
 .number_players-menu {
 
-	min-height: 250px;
-	width: 30%;
-	border: 3px solid black;
-	margin: auto;
-	background: linear-gradient(to bottom, #ffff00 4%, #00ff99 80%);
-	text-align: center;
-	position: absolute;
-	top: 150px;
-	right: 35%;
+    min-height: 250px;
+    width: 30%;
+    border: 3px solid black;
+    margin: auto;
+    background: linear-gradient(to bottom, #ffff00 4%, #00ff99 80%);
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    right: 35%;
 }
 
 .number_players img {
-	position: absolute;
-	top: 135px;
-	left: 63.9%;
-	z-index: 1;
+    position: absolute;
+    top: 135px;
+    left: 63.9%;
+    z-index: 1;
 }
 
 .activ {
-	display: block;
+    display: block;
 }
 
 .number_players-menu input {
-	width: 40px;
+    width: 40px;
 }
 

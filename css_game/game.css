@@ -1,133 +1,192 @@
 body {
-	background: url(/img/bunker.jpg);
+    background: url(/img/bunker.jpg);
 }
 
 .game {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .specifications {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
-.actionCards{
-margin-left: 18px;
+
+.playerNumber {
+    width: 40px;
 }
+
+.actionCards {
+    margin-left: 18px;
+}
+
 .cartGame p {
-	margin-top: 0;
-	margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .player {
-	min-width: 20%;
-	max-width: 30%;
-	border: solid 2px black;
-	margin: 2% 2% 2% 2%;
-	background: white;
-	padding-bottom: 10px;
+    min-width: 20%;
+    max-width: 25%;
+    border: solid 2px black;
+    margin: 2% 2% 2% 2%;
+    background: white;
+    padding-bottom: 10px;
 }
-.use{
-	text-align: center;
+
+.kik100 {
+    display: none;
 }
+
+.use {
+    text-align: center;
+}
+
 .player h1 {
-	border-bottom: solid black 1px;
-	margin-top: 0;
-	text-align: center;
+    border-bottom: solid black 1px;
+    margin-top: 0;
+    text-align: center;
 }
 
 .player h3 {
-	text-align: center;
+    text-align: center;
 }
 
 .specifications {
-	font-size: 18px;
+    font-size: 18px;
 
 }
 
 .specifications li {
 
-	margin-left: 0;
+    margin-left: 0;
 
 }
 
 .dab01 {
-	display: none;
+    display: none;
 }
 
 .game_info {
-	display: flex;
-	flex-direction: column;
-	border: 3px solid black;
-	height: 510px;
-	width: 50%;
-	position: absolute;
-	margin: 0% 25% 1% 25%;
-	background-color: rgba(212, 210, 54, 0.993);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    height: 510px;
+    width: 50%;
+    position: absolute;
+    margin: 0% 25% 1% 25%;
+    background-color: rgba(212, 210, 54, 0.993);
+}
+
+.block_kik {
+    display: none;
+    flex-direction: column;
+    border: 3px solid black;
+    min-height: 210px;
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    background-color: LightYellow;
 }
 
 .info_cata {
-	text-align: center;
-	border-bottom: 2px solid black;
-	height: 50px;
-	margin-top: 0px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    height: 50px;
+    margin-top: 0px;
 }
 
 .info_cata h1 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .text_info {
-	height: 400px;
+    height: 400px;
 }
 
 .start_game {
-	margin: 25px 30% 5px 30%;
+    margin: 25px 30% 5px 30%;
+}
+
+.block_kik h1 {
+    margin: 10px 0 10px 30%;
+}
+
+.block_kik p {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.block_kik input {
+    width: 50px;
+    margin-left: 40%;
 }
 
 .button_start {
-	width: 100%;
-	height: 40px;
-	background-color: PaleGreen;
+    width: 100%;
+    height: 40px;
+    background-color: PaleGreen;
+}
+
+.button_kik_accept {
+    width: 100%;
+    height: 40px;
+    background-color: PaleGreen;
+}
+.button_back_accept {
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
 }
 
 .button_info {
-	margin: 25px 30% 10px 30%;
+    margin: 25px 30% 10px 30%;
 }
 
 .buttons_start {
-	width: 100%;
-	height: 40px;
-	background-color: PaleGreen;
+    width: 100%;
+    height: 40px;
+    background-color: PaleGreen;
+}
+
+.button_kik {
+    margin: 25px 30% 10px 30%;
+}
+
+.buttons_kik {
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
 }
 
 .activ {
-	display: none;
+    display: none;
 }
 
 .act {
-	display: none;
+    display: none;
 }
 
 .activs {
-	display: block;
+    display: block;
 }
 
 .name_catastrophe {
-	text-align: center;
-	margin-top: 5px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .main_info {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 .name_bunker {
-	text-align: center;
-	margin-top: 0;
+    text-align: center;
+    margin-top: 0;
 }
